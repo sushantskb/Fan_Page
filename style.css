@@ -105,6 +105,9 @@ ul{
         top: 21px;
         left: 23px;
     }
+    header{
+        background-position-x: center;
+    }
     .nav-links{
         flex-direction: column;
         width: 100%;
