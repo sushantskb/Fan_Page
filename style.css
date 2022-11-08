@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./gmi/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-page{
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+
+.main-page h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #ac1dd2;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.main-page h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background: #cf18ec;
+    padding: 8px 15px;
+    border-radius: 38px;
+    color: white;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.active{
+    color: #ce1fce;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .menu-btn{
+        display: block;
+        margin: -11px 294px;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 21px;
+        left: 23px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(90 101 124);
+        margin-top: -917px;
+        transition: all 0.7s cubic-bezier(0.39, 0.58, 0.57, 1);
+
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .nav-links li{
+        margin: 37px auto;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+
+    }
+    .ipl-content{
+        width: 100%;
+    }
+    .ipl-content p{
+        padding: 0px 0px;
+        width: 325px;
+        margin-left: 134px;
+        margin-top: -30px;
+    }
+    .more .col{
+        width: 100%;
+    }
+    .image-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img{
+        width: 90%;
+    }
+
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 6vmin;
+    color: #b600b6;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.records .rows{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 4vmin;
+    color: #e40101;
+    margin: 20px auto;
+}
+
+p{
+    color: #995959;
+    padding: 0px 40px;
+}
+
+.records .btn{
+    margin-top: 30px;
+}
+
+body, html{
+    overflow-x: hidden;
+}
+
+.ipl{
+    width: 100%;
+    height: 100vh;
+    background: url(./gmi/bg2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.ipl-content{
+    width: 60%;
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ipl-content h1{
+    font-size: 7vmin;
+}
+
+.ipl-content .line{
+    margin-bottom: 50px;
+}
+
+.ipl-content p{
+    color: whitesmoke;
+    font-size: 3vmin;
+}
+.ipl-content .btn{
+    margin-top: 40px;
+}
+
+.content-col{
+    width: 40%;
+    margin: 0 10px;
+}
+
+.image-col{
+    width: 60%;
+}
+
+.more .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img{
+    max-width: 300px;
+    margin: 10px;
+}
+
+.content-col h1{
+    font-size: 6vmin;
+    color: #fc13f1;
+}
+
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+
+/* --Hover-- */
+li {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #c91ef4;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  li:hover:before, li:focus:before, li:active:before {
+    left: 0;
+    right: 0;
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  img:hover, img:focus, img:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
+
+  @-webkit-keyframes btn {
+    50% {
+      background-color: rgba(32, 152, 209, 0.75);
+    }
+  }
+  @keyframes btn {
+    50% {
+      background-color: rgba(32, 152, 209, 0.75);
+    }
+  }
+  .btn {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+  .btn:hover, .btn:focus, .btn:active {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: #865aad;
+    background-color: #4c0ef7;
+    color: white;
+  }
